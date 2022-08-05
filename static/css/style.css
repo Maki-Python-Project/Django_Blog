@@ -1,0 +1,12 @@
+a{
+    color: black;
+}
+a:hover{
+    color: #4d4d4d;
+}
+body{
+    background-color: black;
+}
+.card-header{
+    color: black;
+}
