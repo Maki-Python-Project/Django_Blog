@@ -1,11 +1,18 @@
+import logging
+import datetime
+
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic import ListView, DetailView
 from django.views.generic.base import View
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
+from django.http import HttpResponse
 from django.urls import reverse_lazy
 from .forms import CommentForm
 from django.shortcuts import redirect
 from .models import Comment, Article
+
+
+logger = logging.getLogger(__name__)
 
 
 class ArticleListView(ListView):
@@ -54,3 +61,10 @@ class ArticleCreateView(LoginRequiredMixin, CreateView):
     def form_valid(self, form):
         form.instance.author = self.request.user
         return super().form_valid(form)
+
+
+def hello_reader(request):
+    logger.warning(
+        'Endpoint articles/logger was accessed at '+str(datetime.datetime.now())+' hours!'
+    )
+    return HttpResponse("<h2>Custom logger</h2>")
