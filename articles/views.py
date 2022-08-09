@@ -18,6 +18,12 @@ logger = logging.getLogger(__name__)
 class ArticleListView(ListView):
     model = Article
     template_name = 'articles/article_list.html'
+    queryset = model.objects.filter(draft=False)
+
+
+class DraftArticleListView(ListView):
+    model = Article
+    template_name = 'articles/article_draft.html'
 
 
 class ArticleAddComment(View):
@@ -44,12 +50,32 @@ class ArticleUpdateView(LoginRequiredMixin, UpdateView):
     template_name = 'articles/article_edit.html'
     login_url = 'login'
 
+    def get_object(self, queryset=None):
+        obj = super(ArticleUpdateView, self).get_object(queryset)
+        if self.request.user.is_superuser:
+            return obj
+        if obj.author != self.request.user:
+            raise ValueError(
+                "You are not the author of this post, so you cannot edit it"
+            )
+        return obj
+
 
 class ArticleDeleteView(LoginRequiredMixin, DeleteView):
     model = Article
     template_name = 'articles/article_delete.html'
-    success_url = reverse_lazy('articles/article_list')
+    success_url = reverse_lazy('article_list')
     login_url = 'login'
+
+    def get_object(self, queryset=None):
+        obj = super(ArticleDeleteView, self).get_object(queryset)
+        if self.request.user.is_superuser:
+            return obj
+        if obj.author != self.request.user:
+            raise ValueError(
+                "You are not the author of this post, so you cannot delete it"
+            )
+        return obj
 
 
 class ArticleCreateView(LoginRequiredMixin, CreateView):

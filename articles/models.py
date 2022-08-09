@@ -1,6 +1,12 @@
+from pyexpat import model
 from django.conf import settings
 from django.db import models
 from django.urls import reverse
+
+
+class DraftManager(models.Manager):
+    def get_queryset(self):
+        return super().get_queryset().filter(draft=True)
 
 
 class Article(models.Model):
@@ -11,6 +17,9 @@ class Article(models.Model):
         settings.AUTH_USER_MODEL,
         on_delete=models.CASCADE,
     )
+    draft = models.BooleanField(default=False)
+    objects = models.Manager()
+    draft_true = DraftManager()
 
     def __str__(self):
         return self.title

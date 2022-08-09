@@ -17,6 +17,9 @@
 
     <ul class="navbar-nav mr-auto">
         <li class="nav-item"><a href="{% url 'article_new' %}">+ New</li>
+        {% if user.is_superuser %}
+            <li class="nav-item"><a href="{% url 'article_draft' %}">/Check draft articles</li>
+        {% endif %}
     </ul>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">

@@ -1,12 +1,12 @@
 {% extends 'base.html' %}
-{% load cache %}
 
+{% load article_tag %}
 
-{% block title %} Articles {% endblock %}
+{% block title %} Draft Articles {% endblock %}
 
 {% block content %}
-    {% cache 10 article_list %}
-    {% for article in object_list %}
+    {% get_all_draft_articles as draft_articles %}
+    {% for article in draft_articles %}
         <div class="card">
             <div class="card-header">
                     <a href="{% url 'article_detail' article.pk %}">{{article.title}}</a></span> &middot;
@@ -20,6 +20,5 @@
         </div>
         <br>
     {% endfor %}
-    {% endcache %}
 
 {% endblock %}
