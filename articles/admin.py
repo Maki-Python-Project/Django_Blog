@@ -8,8 +8,8 @@ class CommentInLine(admin.TabularInline):
 
 
 class ArticleAdmin(admin.ModelAdmin):
-    list_display = ('title', 'body', 'date', 'author')
-    list_filter = ('title', 'author')
+    list_display = ('title', 'body', 'date', 'author', 'views')
+    list_filter = ('title', 'author', 'category')
     search_fields = ('title', 'date')
     save_on_top = True
     inlines = [
@@ -19,3 +19,4 @@ class ArticleAdmin(admin.ModelAdmin):
 
 admin.site.register(models.Article, ArticleAdmin)
 admin.site.register(models.Comment)
+admin.site.register(models.Category)

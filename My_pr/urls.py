@@ -9,4 +9,5 @@ urlpatterns = [
     path('users/', include('django.contrib.auth.urls')),
     path('', include('pages.urls')),
     path('articles/', include('articles.urls')),
+    path('__debug__/', include('debug_toolbar.urls')),
 ]

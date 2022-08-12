@@ -4,7 +4,7 @@ from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "My_pr.settings")
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'My_pr.settings')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
@@ -27,12 +27,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # third-party
+    'crispy_forms',
+    'debug_toolbar',
+
     # local
     'users',
     'pages',
     'articles',
-
-    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -43,7 +46,13 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # 'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
+
+INTERNAL_IPS = [
+        '127.0.0.1',
+    ]
+
 
 AUTH_USER_MODEL = 'users.CustomUser'
 
@@ -131,7 +140,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static"),
+    os.path.join(BASE_DIR, 'static'),
 ]
 
 LOGGING = {

@@ -12,21 +12,32 @@
    <p><a href="{% url 'article_edit' article.pk %}">Edit</a> | <a href="{% url 'article_delete' article.pk %}">Delete</a></p>
    <p>Back to <a href="{% url 'article_list' %}">All Articles</a>.</p>
 
-   
+    {% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+        <div class="alert alert-danger">
+            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+        </div>
+        {% endfor %}
+    </ul>
+    {% endif %}
+
         <form action="{% url 'article_comment' article.id %}" method="post" class="mt-4">
             {% csrf_token %}
             <input type="hidden" value="">
             <div class="form-group editContent">
                 <label for="contactcomment" class="editContent">
-                    Ваш коментар *
+                    Your comment *
                 </label>
                 <textarea class="form-control border" rows="5" name="text"
                             id="contactcomment" required=""></textarea>
             </div>
             
             <button class="btn btn-success" type="submit">Send</button>
+            
         </form>
         <br>
+        
     {% for comment in article.comments.all %}
         <p>
             <span class="font-weight-bold">{{comment.author}} &middot;</span>

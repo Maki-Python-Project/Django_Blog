@@ -12794,3 +12794,1417 @@ Traceback (most recent call last):
   File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\urls\resolvers.py", line 694, in _reverse_with_prefix
     raise NoReverseMatch(msg)
 django.urls.exceptions.NoReverseMatch: Reverse for 'articles' not found. 'articles' is not a valid view function or pattern name.
+Internal Server Error: /articles/4/delete/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\contrib\auth\mixins.py", line 71, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\detail.py", line 106, in get
+    self.object = self.get_object()
+  File "C:\Maki\Articles\articles\views.py", line 75, in get_object
+    raise ValueError(
+ValueError: You are not the author of this post, so you cannot delete it
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Internal Server Error: /articles/2/comment/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Maki\Articles\articles\views.py", line 33, in post
+    if form.is_valid():
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\forms\forms.py", line 175, in is_valid
+    return self.is_bound and not self.errors
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\forms\forms.py", line 170, in errors
+    self.full_clean()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\forms\forms.py", line 373, in full_clean
+    self._clean_form()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\forms\forms.py", line 400, in _clean_form
+    cleaned_data = self.clean()
+  File "C:\Maki\Articles\articles\forms.py", line 13, in clean
+    raise ValueError(
+ValueError: menshe 3
+Internal Server Error: /articles/2/comment/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Maki\Articles\articles\views.py", line 36, in post
+    comment.text = form.cleaned_data['text']
+KeyError: 'text'
+Internal Server Error: /articles/2/comment/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Maki\Articles\articles\views.py", line 33, in post
+    print(dict(form))
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+Internal Server Error: /articles/2/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    response = response.render()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\loader_tags.py", line 278, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\loader_tags.py", line 216, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 449, in parse
+    raise self.error(token, e)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 447, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 662, in __init__
+    raise TemplateSyntaxError("Could not parse the remainder: '%s' "
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ' form.errors' from 'if form.errors'
+<ul class="errorlist"><li>__all__<ul class="errorlist nonfield"><li>The comment must contain at least 3 characters</li></ul></li></ul>
+<ul class="errorlist"><li>__all__<ul class="errorlist nonfield"><li>The comment must contain at least 3 characters</li></ul></li></ul>
+form.errors
+Internal Server Error: /articles/2/comment/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Maki\Articles\articles\views.py", line 40, in post
+    raise form.errors
+TypeError: exceptions must derive from BaseException
+Internal Server Error: /articles/2/comment/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Maki\Articles\articles\views.py", line 41, in post
+    form.save()
+AttributeError: 'ErrorDict' object has no attribute 'save'
+Internal Server Error: /articles/2/comment/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\middleware\clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'tuple' object has no attribute 'get'
+Internal Server Error: /articles/2/comment/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\middleware\clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'tuple' object has no attribute 'get'
+Internal Server Error: /articles/2/comment/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\middleware\clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'tuple' object has no attribute 'get'
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Internal Server Error: /articles/2/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\contrib\auth\mixins.py", line 71, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\detail.py", line 107, in get
+    context = self.get_context_data(object=self.object)
+  File "C:\Maki\Articles\articles\views.py", line 51, in get_context_data
+    context = super(Article, self).get_context_data(**kwargs)
+TypeError: super(type, obj): obj must be an instance or subtype of type
+Internal Server Error: /articles/2/comment/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Maki\Articles\articles\views.py", line 41, in post
+    return self.form_invalid(form)
+AttributeError: 'ArticleAddComment' object has no attribute 'form_invalid'
+Internal Server Error: /articles/2/comment/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\middleware\clickjacking.py", line 33, in process_response
+    response.headers['X-Frame-Options'] = self.get_xframe_options_value(
+AttributeError: 'ErrorDict' object has no attribute 'headers'
+Internal Server Error: /articles/2/comment/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Maki\Articles\articles\views.py", line 41, in post
+    return self.form.errors
+AttributeError: 'ArticleAddComment' object has no attribute 'form'
+Internal Server Error: /articles/2/comment/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\middleware\clickjacking.py", line 33, in process_response
+    response.headers['X-Frame-Options'] = self.get_xframe_options_value(
+AttributeError: 'ErrorDict' object has no attribute 'headers'
+Internal Server Error: /articles/2/comment/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\middleware\clickjacking.py", line 33, in process_response
+    response.headers['X-Frame-Options'] = self.get_xframe_options_value(
+AttributeError: 'ErrorDict' object has no attribute 'headers'
+Internal Server Error: /articles/2/comment/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Maki\Articles\articles\views.py", line 41, in post
+    messages.success(request, str(form.errors[0]))
+KeyError: 0
+Internal Server Error: /articles/2/comment/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Maki\Articles\articles\views.py", line 43, in post
+    error_string = ' '.join([l for l in target])
+TypeError: sequence item 1: expected str instance, ErrorList found
+Internal Server Error: /articles/2/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\middleware.py", line 55, in __call__
+    panel.enable_instrumentation()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\panels\cache.py", line 206, in enable_instrumentation
+    for cache in caches.all(initialized_only=True):
+TypeError: all() got an unexpected keyword argument 'initialized_only'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\middleware.py", line 55, in __call__
+    panel.enable_instrumentation()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\panels\cache.py", line 206, in enable_instrumentation
+    for cache in caches.all(initialized_only=True):
+TypeError: all() got an unexpected keyword argument 'initialized_only'
+Internal Server Error: /articles/2/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\middleware.py", line 55, in __call__
+    panel.enable_instrumentation()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\panels\cache.py", line 206, in enable_instrumentation
+    for cache in caches.all(initialized_only=True):
+TypeError: all() got an unexpected keyword argument 'initialized_only'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\middleware.py", line 55, in __call__
+    panel.enable_instrumentation()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\panels\cache.py", line 206, in enable_instrumentation
+    for cache in caches.all(initialized_only=True):
+TypeError: all() got an unexpected keyword argument 'initialized_only'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\middleware.py", line 55, in __call__
+    panel.enable_instrumentation()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\panels\cache.py", line 206, in enable_instrumentation
+    for cache in caches.all(initialized_only=True):
+TypeError: all() got an unexpected keyword argument 'initialized_only'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\middleware.py", line 55, in __call__
+    panel.enable_instrumentation()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\panels\cache.py", line 206, in enable_instrumentation
+    for cache in caches.all(initialized_only=True):
+TypeError: all() got an unexpected keyword argument 'initialized_only'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\middleware.py", line 55, in __call__
+    panel.enable_instrumentation()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\panels\cache.py", line 206, in enable_instrumentation
+    for cache in caches.all(initialized_only=True):
+TypeError: all() got an unexpected keyword argument 'initialized_only'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\middleware.py", line 55, in __call__
+    panel.enable_instrumentation()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\panels\cache.py", line 206, in enable_instrumentation
+    for cache in caches.all(initialized_only=True):
+TypeError: all() got an unexpected keyword argument 'initialized_only'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\middleware.py", line 55, in __call__
+    panel.enable_instrumentation()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\panels\cache.py", line 206, in enable_instrumentation
+    for cache in caches.all(initialized_only=True):
+TypeError: all() got an unexpected keyword argument 'initialized_only'
+Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\middleware.py", line 55, in __call__
+    panel.enable_instrumentation()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\panels\cache.py", line 206, in enable_instrumentation
+    for cache in caches.all(initialized_only=True):
+TypeError: all() got an unexpected keyword argument 'initialized_only'
+Not Found: /favicon.ico
+Internal Server Error: /articles/4/edit/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\contrib\auth\mixins.py", line 71, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\edit.py", line 189, in get
+    self.object = self.get_object()
+  File "C:\Maki\Articles\articles\views.py", line 72, in get_object
+    raise ValueError(
+ValueError: You are not the author of this post, so you cannot edit it
+Internal Server Error: /articles/4/delete/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\contrib\auth\mixins.py", line 71, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\detail.py", line 106, in get
+    self.object = self.get_object()
+  File "C:\Maki\Articles\articles\views.py", line 89, in get_object
+    raise ValueError(
+ValueError: You are not the author of this post, so you cannot delete it
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\middleware.py", line 55, in __call__
+    panel.enable_instrumentation()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\panels\cache.py", line 206, in enable_instrumentation
+    for cache in caches.all(initialized_only=True):
+TypeError: all() got an unexpected keyword argument 'initialized_only'
+Internal Server Error: /__debug__
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\middleware.py", line 55, in __call__
+    panel.enable_instrumentation()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\panels\cache.py", line 206, in enable_instrumentation
+    for cache in caches.all(initialized_only=True):
+TypeError: all() got an unexpected keyword argument 'initialized_only'
+Internal Server Error: /1
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\middleware.py", line 55, in __call__
+    panel.enable_instrumentation()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\panels\cache.py", line 206, in enable_instrumentation
+    for cache in caches.all(initialized_only=True):
+TypeError: all() got an unexpected keyword argument 'initialized_only'
+Internal Server Error: /1
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\middleware.py", line 55, in __call__
+    panel.enable_instrumentation()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\panels\cache.py", line 206, in enable_instrumentation
+    for cache in caches.all(initialized_only=True):
+TypeError: all() got an unexpected keyword argument 'initialized_only'
+Internal Server Error: /1
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\middleware.py", line 55, in __call__
+    panel.enable_instrumentation()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\panels\cache.py", line 206, in enable_instrumentation
+    for cache in caches.all(initialized_only=True):
+TypeError: all() got an unexpected keyword argument 'initialized_only'
+Internal Server Error: /1
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\middleware.py", line 55, in __call__
+    panel.enable_instrumentation()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\panels\cache.py", line 206, in enable_instrumentation
+    for cache in caches.all(initialized_only=True):
+TypeError: all() got an unexpected keyword argument 'initialized_only'
+Internal Server Error: /1
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\middleware.py", line 55, in __call__
+    panel.enable_instrumentation()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\panels\cache.py", line 206, in enable_instrumentation
+    for cache in caches.all(initialized_only=True):
+TypeError: all() got an unexpected keyword argument 'initialized_only'
+Not Found: /1
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\middleware.py", line 55, in __call__
+    panel.enable_instrumentation()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\panels\cache.py", line 206, in enable_instrumentation
+    for cache in caches.all(initialized_only=True):
+TypeError: all() got an unexpected keyword argument 'initialized_only'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\middleware.py", line 55, in __call__
+    panel.enable_instrumentation()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\panels\cache.py", line 206, in enable_instrumentation
+    for cache in caches.all(initialized_only=True):
+TypeError: all() got an unexpected keyword argument 'initialized_only'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\middleware.py", line 55, in __call__
+    panel.enable_instrumentation()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\panels\cache.py", line 206, in enable_instrumentation
+    for cache in caches.all(initialized_only=True):
+TypeError: all() got an unexpected keyword argument 'initialized_only'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\middleware.py", line 55, in __call__
+    panel.enable_instrumentation()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\panels\cache.py", line 206, in enable_instrumentation
+    for cache in caches.all(initialized_only=True):
+TypeError: all() got an unexpected keyword argument 'initialized_only'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\middleware.py", line 55, in __call__
+    panel.enable_instrumentation()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\panels\cache.py", line 206, in enable_instrumentation
+    for cache in caches.all(initialized_only=True):
+TypeError: all() got an unexpected keyword argument 'initialized_only'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\middleware.py", line 55, in __call__
+    panel.enable_instrumentation()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\panels\cache.py", line 206, in enable_instrumentation
+    for cache in caches.all(initialized_only=True):
+TypeError: all() got an unexpected keyword argument 'initialized_only'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\middleware.py", line 55, in __call__
+    panel.enable_instrumentation()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\panels\cache.py", line 206, in enable_instrumentation
+    for cache in caches.all(initialized_only=True):
+TypeError: all() got an unexpected keyword argument 'initialized_only'
+Internal Server Error: /articles/draft/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\middleware\clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'function' object has no attribute 'get'
+Internal Server Error: /articles/2/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\middleware.py", line 55, in __call__
+    panel.enable_instrumentation()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\panels\cache.py", line 206, in enable_instrumentation
+    for cache in caches.all(initialized_only=True):
+TypeError: all() got an unexpected keyword argument 'initialized_only'
+Internal Server Error: /articles/2/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\middleware.py", line 55, in __call__
+    panel.enable_instrumentation()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\panels\cache.py", line 206, in enable_instrumentation
+    for cache in caches.all(initialized_only=True):
+TypeError: all() got an unexpected keyword argument 'initialized_only'
+Internal Server Error: /articles/2/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\middleware.py", line 55, in __call__
+    panel.enable_instrumentation()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\debug_toolbar\panels\cache.py", line 206, in enable_instrumentation
+    for cache in caches.all(initialized_only=True):
+TypeError: all() got an unexpected keyword argument 'initialized_only'
+Not Found: /favicon.ico
+Internal Server Error: /articles/1/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    response = response.render()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\test\utils.py", line 100, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\test\utils.py", line 100, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\urls\base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\urls\resolvers.py", line 694, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'article_edit' with arguments '('',)' not found. 1 pattern(s) tried: ['articles/(?P<pk>[0-9]+)/edit/$']
+Internal Server Error: /articles/1/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    response = response.render()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\test\utils.py", line 100, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\test\utils.py", line 100, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\urls\base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\urls\resolvers.py", line 694, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'article_edit' with arguments '('',)' not found. 1 pattern(s) tried: ['articles/(?P<pk>[0-9]+)/edit/$']
+Internal Server Error: /articles/1/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    response = response.render()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\test\utils.py", line 100, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\test\utils.py", line 100, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\urls\base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\urls\resolvers.py", line 694, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'article_edit' with arguments '('',)' not found. 1 pattern(s) tried: ['articles/(?P<pk>[0-9]+)/edit/$']
+Internal Server Error: /articles/1/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    response = response.render()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\test\utils.py", line 100, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\test\utils.py", line 100, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\urls\base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\urls\resolvers.py", line 694, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'article_edit' with arguments '('',)' not found. 1 pattern(s) tried: ['articles/(?P<pk>[0-9]+)/edit/$']
+Internal Server Error: /articles/1/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\contrib\auth\mixins.py", line 71, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+TypeError: get() got an unexpected keyword argument 'pk'
+Internal Server Error: /articles/1/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\contrib\auth\mixins.py", line 71, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+TypeError: get() got multiple values for argument 'pk'
+Internal Server Error: /articles/1/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\base.py", line 309, in check_response
+    raise ValueError(
+ValueError: The view articles.views.ArticleDetailView didn't return an HttpResponse object. It returned None instead.
+Internal Server Error: /articles/1/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\base.py", line 309, in check_response
+    raise ValueError(
+ValueError: The view articles.views.ArticleDetailView didn't return an HttpResponse object. It returned None instead.
+Internal Server Error: /articles/1/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\contrib\auth\mixins.py", line 71, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+TypeError: get() got an unexpected keyword argument 'pk'
+Internal Server Error: /articles/1/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\base.py", line 309, in check_response
+    raise ValueError(
+ValueError: The view articles.views.ArticleDetailView didn't return an HttpResponse object. It returned None instead.
+Internal Server Error: /articles/1/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\contrib\auth\mixins.py", line 71, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+TypeError: get() got multiple values for argument 'pk'
+Not Found: /favicon.ico
+Internal Server Error: /articles/1/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\contrib\auth\mixins.py", line 71, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\detail.py", line 106, in get
+    self.object = self.get_object()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\detail.py", line 30, in get_object
+    queryset = self.get_queryset()
+  File "C:\Maki\Articles\articles\views.py", line 57, in get_queryset
+    print(queryset.views)
+AttributeError: 'QuerySet' object has no attribute 'views'
+Internal Server Error: /articles/1/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\contrib\auth\mixins.py", line 71, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\detail.py", line 106, in get
+    self.object = self.get_object()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\detail.py", line 30, in get_object
+    queryset = self.get_queryset()
+  File "C:\Maki\Articles\articles\views.py", line 57, in get_queryset
+    print(queryset['views'])
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\query.py", line 290, in __getitem__
+    raise TypeError(
+TypeError: QuerySet indices must be integers or slices, not str.
+Internal Server Error: /articles/1/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\contrib\auth\mixins.py", line 71, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\detail.py", line 106, in get
+    self.object = self.get_object()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\detail.py", line 36, in get_object
+    queryset = queryset.filter(pk=pk)
+AttributeError: 'int' object has no attribute 'filter'
+Internal Server Error: /articles/1/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\contrib\auth\mixins.py", line 71, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\detail.py", line 106, in get
+    self.object = self.get_object()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\detail.py", line 36, in get_object
+    queryset = queryset.filter(pk=pk)
+AttributeError: 'int' object has no attribute 'filter'
+Internal Server Error: /articles/1/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\fields\__init__.py", line 1823, in get_prep_value
+    return int(value)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'builtin_function_or_method'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\contrib\auth\mixins.py", line 71, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\detail.py", line 106, in get
+    self.object = self.get_object()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\detail.py", line 30, in get_object
+    queryset = self.get_queryset()
+  File "C:\Maki\Articles\articles\views.py", line 57, in get_queryset
+    queryset = Article.objects.filter(pk=id).update(
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\sql\query.py", line 1396, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\sql\query.py", line 1415, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\sql\query.py", line 1350, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\sql\query.py", line 1196, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\lookups.py", line 25, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\lookups.py", line 77, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\fields\__init__.py", line 1825, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <built-in function id>.
+Internal Server Error: /articles/1/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\contrib\auth\mixins.py", line 71, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\detail.py", line 106, in get
+    self.object = self.get_object()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\detail.py", line 30, in get_object
+    queryset = self.get_queryset()
+TypeError: get_queryset() missing 1 required positional argument: 'request'
+Internal Server Error: /articles/1/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\contrib\auth\mixins.py", line 71, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\detail.py", line 106, in get
+    self.object = self.get_object()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\detail.py", line 36, in get_object
+    queryset = queryset.filter(pk=pk)
+AttributeError: 'int' object has no attribute 'filter'
+Internal Server Error: /articles/1/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\contrib\auth\mixins.py", line 71, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\detail.py", line 106, in get
+    self.object = self.get_object()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\detail.py", line 36, in get_object
+    queryset = queryset.filter(pk=pk)
+AttributeError: 'int' object has no attribute 'filter'
+Not Found: /filter/
+Not Found: /en/venom_2/
+Internal Server Error: /articles/filter/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\list.py", line 142, in get
+    self.object_list = self.get_queryset()
+  File "C:\Maki\Articles\articles\views.py", line 139, in get_queryset
+    print(category.id)
+AttributeError: 'builtin_function_or_method' object has no attribute 'id'
+Internal Server Error: /articles/filter/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\fields\__init__.py", line 1823, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'jokes'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\list.py", line 142, in get
+    self.object_list = self.get_queryset()
+  File "C:\Maki\Articles\articles\views.py", line 138, in get_queryset
+    queryset = Article.objects.filter(category__id__in=self.request.GET.getlist("category"))
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\sql\query.py", line 1396, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\sql\query.py", line 1415, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\sql\query.py", line 1350, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\sql\query.py", line 1196, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\lookups.py", line 25, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\lookups.py", line 240, in get_prep_lookup
+    rhs_value = self.lhs.output_field.get_prep_value(rhs_value)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\fields\__init__.py", line 1825, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'jokes'.
+Internal Server Error: /articles/filter/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\fields\__init__.py", line 1823, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'Sport'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\list.py", line 142, in get
+    self.object_list = self.get_queryset()
+  File "C:\Maki\Articles\articles\views.py", line 138, in get_queryset
+    queryset = Article.objects.filter(category__id__in=self.request.GET.getlist("category"))
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\sql\query.py", line 1396, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\sql\query.py", line 1415, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\sql\query.py", line 1350, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\sql\query.py", line 1196, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\lookups.py", line 25, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\lookups.py", line 240, in get_prep_lookup
+    rhs_value = self.lhs.output_field.get_prep_value(rhs_value)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\fields\__init__.py", line 1825, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'Sport'.
+Internal Server Error: /articles/filter/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\fields\__init__.py", line 1823, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'Sport'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\list.py", line 142, in get
+    self.object_list = self.get_queryset()
+  File "C:\Maki\Articles\articles\views.py", line 138, in get_queryset
+    queryset = Article.objects.filter(category__id__in=self.request.GET.getlist("category"))
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\sql\query.py", line 1396, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\sql\query.py", line 1415, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\sql\query.py", line 1350, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\sql\query.py", line 1196, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\lookups.py", line 25, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\lookups.py", line 240, in get_prep_lookup
+    rhs_value = self.lhs.output_field.get_prep_value(rhs_value)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\fields\__init__.py", line 1825, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'Sport'.
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /articles/unknow
+Not Found: /favicon.ico
+Internal Server Error: /articles/filter/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\sql\query.py", line 1647, in transform
+    return self.try_transform(wrapped, name)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\sql\query.py", line 1229, in try_transform
+    raise FieldError(
+django.core.exceptions.FieldError: Unsupported lookup 'value' for IntegerField or join on the field not permitted.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    response = response.render()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\test\utils.py", line 100, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\test\utils.py", line 100, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\defaulttags.py", line 163, in render
+    values = self.sequence.resolve(context, ignore_failures=True)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 858, in _resolve_lookup
+    current = current()
+  File "C:\Maki\Articles\articles\views.py", line 26, in get_month
+    return Article.objects.order_by('date').values('date__year__value').distinct()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\query.py", line 840, in values
+    clone = self._values(*fields, **expressions)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\query.py", line 835, in _values
+    clone.query.set_values(fields)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\sql\query.py", line 2251, in set_values
+    self.add_fields(field_names, True)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\sql\query.py", line 1942, in add_fields
+    cols.append(join_info.transform_function(target, final_alias))
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\sql\query.py", line 1651, in transform
+    raise last_field_exception
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\sql\query.py", line 1628, in setup_joins
+    path, final_field, targets, rest = self.names_to_path(
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\sql\query.py", line 1574, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'year' into field. Join on 'date' not permitted.
+Internal Server Error: /articles/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    response = response.render()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\test\utils.py", line 100, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\test\utils.py", line 100, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\defaulttags.py", line 163, in render
+    values = self.sequence.resolve(context, ignore_failures=True)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 858, in _resolve_lookup
+    current = current()
+  File "C:\Maki\Articles\articles\views.py", line 27, in get_month
+    return User.objects.all()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\manager.py", line 187, in __get__
+    raise AttributeError(
+AttributeError: Manager isn't available; 'auth.User' has been swapped for 'users.CustomUser'
+Internal Server Error: /articles/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    response = response.render()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\test\utils.py", line 100, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\test\utils.py", line 100, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\defaulttags.py", line 163, in render
+    values = self.sequence.resolve(context, ignore_failures=True)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\template\base.py", line 858, in _resolve_lookup
+    current = current()
+  File "C:\Maki\Articles\articles\views.py", line 27, in get_month
+    return CustomUser.objects.all()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\manager.py", line 187, in __get__
+    raise AttributeError(
+AttributeError: Manager isn't available; 'auth.User' has been swapped for 'users.CustomUser'
+Internal Server Error: /articles/filter/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\list.py", line 142, in get
+    self.object_list = self.get_queryset()
+  File "C:\Maki\Articles\articles\views.py", line 128, in get_queryset
+    queryset = Article.objects.filter(
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\sql\query.py", line 1396, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\sql\query.py", line 1415, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\sql\query.py", line 1350, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\sql\query.py", line 1187, in build_lookup
+    raise FieldError('Related Field got invalid lookup: {}'.format(lookup_name))
+django.core.exceptions.FieldError: Related Field got invalid lookup: id_in
+Internal Server Error: /articles/filter/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\fields\__init__.py", line 1823, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\list.py", line 142, in get
+    self.object_list = self.get_queryset()
+  File "C:\Maki\Articles\articles\views.py", line 128, in get_queryset
+    queryset = Article.objects.filter(
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\sql\query.py", line 1396, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\sql\query.py", line 1415, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\sql\query.py", line 1350, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\sql\query.py", line 1196, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\lookups.py", line 25, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\lookups.py", line 240, in get_prep_lookup
+    rhs_value = self.lhs.output_field.get_prep_value(rhs_value)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\fields\__init__.py", line 1825, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got ''.
+Internal Server Error: /articles/filter/
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\fields\__init__.py", line 1823, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\views\generic\list.py", line 142, in get
+    self.object_list = self.get_queryset()
+  File "C:\Maki\Articles\articles\views.py", line 128, in get_queryset
+    queryset = Article.objects.filter(
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\sql\query.py", line 1396, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\sql\query.py", line 1415, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\sql\query.py", line 1350, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\sql\query.py", line 1196, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\lookups.py", line 25, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\lookups.py", line 240, in get_prep_lookup
+    rhs_value = self.lhs.output_field.get_prep_value(rhs_value)
+  File "C:\Users\maksd\.virtualenvs\Articles-XyCoc__D\lib\site-packages\django\db\models\fields\__init__.py", line 1825, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got ''.

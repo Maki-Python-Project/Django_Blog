@@ -10,3 +10,30 @@ body{
 .card-header{
     color: black;
 }
+
+.side_bar{
+    width: 300px;
+    position: fixed;
+    top: 60px;
+    left: 10px;
+    overflow-x: hidden;
+    padding: 15px;
+}
+
+.side_bar ul{
+    list-style-type: none;
+    display:inline;
+    font-size: 17px;
+    color: #4d4d4d;
+}
+
+.side_bar h3{
+    font-size: 23px;
+    color: #4d4d4d;
+}
+
+.main {
+    margin-left: 140px;
+    font-size: 17px; 
+    padding: 0px 10px;
+}

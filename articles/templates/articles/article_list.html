@@ -1,25 +1,63 @@
 {% extends 'base.html' %}
-{% load cache %}
+
 
 
 {% block title %} Articles {% endblock %}
 
 {% block content %}
-    {% cache 10 article_list %}
-    {% for article in object_list %}
-        <div class="card">
-            <div class="card-header">
-                    <a href="{% url 'article_detail' article.pk %}">{{article.title}}</a></span> &middot;
-                <span class="text-muted">by {{article.author}} | {{article.date}}</span>
+    <div class="side_bar">
+        <form action="{% url 'filter' %}" method="get" name="filter">
+            
+            <div class="left-side my-4">
+                <div class="category_list">
+                    <h3 class="sear-head editContent">Category</h3>
+                    <ul class="w3layouts-box-list">
+                        {% for category in view.get_categories %}
+                            <li class="editContent">
+                                <input type="checkbox" class="checked" name="category" value="{{ category.id }}">
+                                <span class="span editContent">{{ category.name }}</span>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                    <br><br>
+                    </div>
             </div>
-            <div class="card-body">
-                {{article.body}}
-                <a href="{% url 'article_edit' article.pk %}">Edit</a> | 
-                <a href="{% url 'article_delete' article.pk %}">Delete</a> |
+            
+            <div class="left-side my-4">
+                <div class="category_list">
+                    <h3 class="sear-head editContent">Author</h3>
+                    <ul class="w3layouts-box-list">
+                        {% for author in view.get_authors %}
+                            <li class="editContent">
+                                <input type="checkbox" class="checked" name="author" value="{{ author.id }}">
+                                <span class="span editContent">{{ author }}</span>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                    <br><br>
+                    </div>
             </div>
-        </div>
-        <br>
-    {% endfor %}
-    {% endcache %}
+            
+            <button class="btn btn-info" type="submit">Find</button>
+        </form>
+    </div>
+    <br><br>
+    <div class="main">
+        {% for article in object_list %}
+            <div class="card">
+                <div class="card-header">
+                        <a href="{% url 'article_detail' article.pk %}">{{article.title}}</a></span> &middot;
+                    <span class="text-muted">by {{article.author}} | {{article.date}}</span>
+                </div>
+                <div class="card-body">
+                    {{article.body}}
+                    <a href="{% url 'article_edit' article.pk %}">Edit</a> | 
+                    <a href="{% url 'article_delete' article.pk %}">Delete</a> |
+                </div>
+            </div>
+            <br>
+        {% endfor %}
+    </div>
+
 
 {% endblock %}
