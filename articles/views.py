@@ -8,12 +8,13 @@ from django.views.generic.base import View
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.http import HttpResponse
 from django.urls import reverse_lazy
-from .forms import CommentForm
-from django.shortcuts import redirect
-from .models import Comment, Article, Category
 from django.contrib import messages
-from django.contrib.auth.models import User
+from django.shortcuts import redirect
+from django.db.models import Count
+from .forms import CommentForm
+from .models import Comment, Article, Category
 from users.models import CustomUser
+
 
 logger = logging.getLogger(__name__)
 
@@ -29,7 +30,14 @@ class CategoryUserList:
 class ArticleListView(CategoryUserList, ListView):
     model = Article
     template_name = 'articles/article_list.html'
-    queryset = model.objects.filter(draft=False)
+    queryset = model.objects.filter(draft=False).select_related('author')
+
+
+# def popular(request):
+#     queryset = Article.objects.filter(draft=False).order_by('-views')
+#     return render(
+#         request, 'articles/article_popular.html', {'popular_articles': queryset}
+#     )
 
 
 class DraftArticleListView(ListView):
@@ -108,7 +116,7 @@ class ArticleDeleteView(LoginRequiredMixin, DeleteView):
 class ArticleCreateView(LoginRequiredMixin, CreateView):
     model = Article
     template_name = 'articles/article_new.html'
-    fields = ['title', 'body']
+    fields = ['title', 'body', 'category']
     login_url = 'login'
 
     def form_valid(self, form):
@@ -120,6 +128,7 @@ def hello_reader(request):
     logger.warning(
         'Endpoint articles/logger was accessed at '+str(datetime.datetime.now())+' hours!'
     )
+
     return HttpResponse("<h2>Custom logger</h2>")
 
 
@@ -131,3 +140,31 @@ class FilterArticleView(CategoryUserList, ListView):
         )
 
         return queryset
+
+
+class CategoryView(ListView):
+    model = Category
+    queryset = Category.objects.all()
+    template_name = 'articles/category_list.html'
+
+
+class CategoryDetailView(ListView):
+    model = Category
+    template_name = 'articles/category_detail.html'
+
+    def get_queryset(self):
+        category_article = Category.objects.get(id=self.kwargs['pk'])
+        queryset = category_article.articles.all().prefetch_related('author')
+
+        return queryset
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['name_category'] = category_article = Category.objects.get(
+            id=self.kwargs['pk']
+        )
+        context['count_article'] = list(
+            category_article.articles.aggregate(
+                Count('category_id')
+            ).values())[0]
+        return context

@@ -24,7 +24,7 @@ class Article(models.Model):
     title = models.CharField(max_length=255)
     body = models.TextField()
     category = models.ForeignKey(
-        Category, on_delete=models.SET_NULL, null=True
+        Category, related_name='articles', on_delete=models.SET_NULL, null=True
     )
     date = models.DateTimeField(auto_now_add=True)
     author = models.ForeignKey(

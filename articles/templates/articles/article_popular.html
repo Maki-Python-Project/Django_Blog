@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+
+
+{% block title %} Articles {% endblock %}
+
+{% block content %}
+<br>
+<div class="main">
+        {% for category in object_list %}
+            <div class="card">
+                <div class="card-header">
+                    <a href="{% url 'category_detail' category.pk %}">{{category.name}}</a></span> &middot;
+                </div>
+            </div>
+            <br>
+        {% endfor %}
+    </div>
+
+
+{% endblock %}
